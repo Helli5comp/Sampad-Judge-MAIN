@@ -14,16 +14,16 @@ int32_t main(int argc, char *argv[]) {
 	string test_str = to_string(test_num);
 	ifstream user_out((test_str + ".out").c_str());
 	ifstream true_out((test_str + ".ans").c_str());
-	vector <string> v1, v2;
+	vector<string> p, q;
 	string s;
 	while (user_out >> s) 
-		v1.push_back(s);
+		p.emplace_back(s);
 	while (true_out >> s) 
-		v2.push_back(s);
-	if (v1.size() != v2.size())
+		q.emplace_back(s);
+	if ((int) p.size() != (int) q.size())
 		return 1;
-	for (int i = 0; i < v1.size(); i++)
-		if (v1[i] != v2[i])
+	for (int i = 0; i < p.size(); i++)
+		if (p[i] != q[i])
 			return 1;
 
 	return 0;

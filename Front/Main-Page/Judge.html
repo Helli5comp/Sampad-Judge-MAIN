@@ -1,0 +1,543 @@
+<html lang="en" dir="auto">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sampad Judge!</title>
+
+    <meta
+      name="keywords"
+      content="DMOJ,Canadian,Don Mills,DMCI,online judge,programming,code,contest,CCC,CCC Solutions,CCC 2015,IOI,JOI,COCI,DMOPC,Canada,Ontario,Toronto,grade,interactive"
+    />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="https://dmoj.ca/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="https://dmoj.ca/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="https://dmoj.ca/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="https://dmoj.ca/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="https://dmoj.ca/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="https://dmoj.ca/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="https://dmoj.ca/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="https://dmoj.ca/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://dmoj.ca/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Judge_files/Logo.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Judge_files/Logo.png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Judge_files/Logo.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Judge_files/Logo.png"
+      sizes="16x16"
+    />
+    <link rel="manifest" href="https://dmoj.ca/manifest.json" />
+    <meta name="msapplication-TileColor" content="#FFBB33" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="theme-color" content="#FFBB33" />
+    <meta property="og:site_name" content="DMOJ: Modern Online Judge" />
+    <meta property="og:url" content="https://dmoj.ca/" />
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script>
+        window.bad_browser = true;
+      </script>
+    <![endif]-->
+    <meta
+      name="description"
+      content="Practice problem solving and compete against others on the DMOJ, a modern contest platform and archive of programming problems."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://dmoj.ca/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://dmoj.ca/problems/?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="./Judge_files/output.113f9dc7da27.css"
+      type="text/css"
+    />
+    <link rel="canonical" href="https://dmoj.ca/" />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      href="https://dmoj.ca/feed/blog/atom/"
+      title="Atom Blog Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://dmoj.ca/feed/blog/rss/"
+      title="RSS Blog Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      href="https://dmoj.ca/feed/comment/atom/"
+      title="Atom Comment Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://dmoj.ca/feed/comment/rss/"
+      title="RSS Comment Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      href="https://dmoj.ca/feed/problems/atom/"
+      title="Atom Problem Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://dmoj.ca/feed/problems/rss/"
+      title="RSS Problem Feed"
+    />
+    <style>
+      .user-gravatar {
+        display: inline-block;
+        padding-right: 15px;
+        padding-top: 8px;
+        width: 135px;
+      }
+
+      .user-gravatar img {
+        width: 135px;
+        height: 135px;
+        display: block;
+        border-radius: 6px;
+      }
+
+      .recently-attempted,
+      .recommended-problems {
+        display: inline-block;
+      }
+
+      .recently-attempted ul {
+        list-style: none;
+        padding-left: 1em;
+        padding-right: 0.5em;
+        margin: 0.2em;
+      }
+
+      .recently-attempted h4,
+      .recommended-problems h4 {
+        font-weight: 500;
+      }
+    </style>
+    <style>
+      .post {
+        margin: 0 1.4em;
+      }
+
+      .post:first-child {
+        margin-top: 0.6em;
+      }
+
+      .comment-count {
+        font-size: 12px;
+      }
+
+      .comment-icon {
+        padding: 0.1em 0.2em 0 0.5em;
+      }
+
+      .comment-count-link {
+        color: #555;
+      }
+
+      .own-open-tickets .title a,
+      .open-tickets .title a {
+        display: block;
+      }
+
+      .own-open-tickets .object,
+      .open-tickets .object {
+        margin-left: 1em;
+        font-style: italic;
+      }
+
+      .open-tickets .author {
+        margin-left: 1em;
+      }
+
+      .no-clarifications-message {
+        font-style: italic;
+        text-align: center;
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="./Judge_files/output.0108182af6e9.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".time-remaining").each(function () {
+          count_down($(this));
+        });
+
+        $(".blog-sidebar").hide();
+        $("#blog-tab")
+          .find("a")
+          .click(function (e) {
+            e.preventDefault();
+            $("#blog-tab").addClass("active");
+            $("#event-tab").removeClass("active");
+            $(".blog-content").show();
+            $(".blog-sidebar").hide();
+          });
+        $("#event-tab")
+          .find("a")
+          .click(function (e) {
+            e.preventDefault();
+            $("#event-tab").addClass("active");
+            $("#blog-tab").removeClass("active");
+            $(".blog-content").hide();
+            $(".blog-sidebar").show();
+          });
+      });
+    </script>
+    <script>
+      window.user = {};
+    </script>
+    <script>
+      window.user && Raven.setUserContext(window.user);
+    </script>
+    <script>
+      (function (i, s, o, r) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+      })(window, document, "script", "ga");
+      ga("create", "UA-56757436-1", "auto");
+      ga("require", "displayfeatures");
+      ga("send", "pageview");
+    </script>
+    <script src="./Judge_files/_(YW5hbHl0aWNzLmpz)_" async=""></script>
+    <noscript>
+      <style>
+        #content {
+          margin: 80px auto auto;
+        }
+
+        #navigation {
+          top: 27px;
+        }
+      </style>
+    </noscript>
+    <style type="text/css"></style>
+  </head>
+  <body class="window-visible">
+    <svg width="0" height="0" style="display: block">
+      <defs>
+        <clippath id="rating-clip">
+          <circle cx="8" cy="8" r="7"></circle>
+        </clippath>
+      </defs>
+    </svg>
+    <nav id="navigation" class="unselectable">
+      <div id="nav-container">
+        <a id="navicon" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+        <ul id="nav-list">
+          <li class="home-nav-element">
+            <a href="#">
+              <img
+                src="./Judge_files/Logo.png"
+                alt="DMOJ"
+                width="160"
+                height="44"
+                onerror='this.src="https://static.dmoj.ca/static/icons/logo.2f426bc39826.png"; this.onerror=null'
+                style="border: none"
+              />
+            </a>
+          </li>
+          <li class="home-nav-element"><span class="nav-divider"></span></li>
+          <li class="home-menu-item">
+            <a href="https://dmoj.ca/" class="nav-home">Home</a>
+          </li>
+          <li>
+            <a href="../Problems/Problem.html" class="nav-problem">
+              سوالات
+            </a>
+          </li>
+          <li>
+            <a href="../Submissions/Submissions.html" class="nav-submit">
+              ارسال‌ها
+            </a>
+          </li>
+          <li>
+            <a href="../Users/Users.html" class="nav-user"> کاربر </a>
+          </li>
+          <li>
+            <a href="../Contests/Contests.html" class="nav-contest">
+              مسابقات
+            </a>
+          </li>
+          <li>
+            <a href="../About/About.html" class="nav-about"> درباره‌ما </a>
+            <ul dir="auto">
+              <li align=center>
+                <a href="../Tips/Tips.html" class="nav-tips"> نکات </a>
+              </li>
+              <li align=center>
+                <a href="../API/API.html" class="nav-api"> API </a>
+              </li>
+              <li align=center>
+                <a href="https://github.com/Helli5comp/Sampad-Judge-MAIN" class="nav-github">
+                  گیت‌هاب
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <span id="user-links">
+          <span class="anon">
+            <a href="../Register/Signup.html"><b> ثبت‌نام </b></a>
+            &nbsp; یا &nbsp;
+            <a href="../Login/Signin.html"><b> ورود </b></a>
+          </span>
+        </span>
+      </div>
+      <div id="nav-shadow"></div>
+    </nav>
+    <div id="page-container">
+      <noscript>
+        <div id="noscript">این سایت با Javascript کار می‌کند!</div>
+      </noscript>
+      <br />
+      <main id="content">
+        <div id="content-body">
+          <div class="sidebox" style="margin-bottom: 0.5em">
+            <h3 dir="auto">
+              سمپاد جاج، جایی برای پیشرفت!
+              <i class="fa fa-exclamation"></i>
+            </h3>
+            <div class="sidebox-content" style="padding: 1px 2.5em">
+              <p dir="auto">
+                سلام، اینجا سمپاد جاج هست! جایی که توش می‌تونین سوال حل کنین و با دوستاتون مسابقه بدین تا مهارت برنامه‌نویسیتون رو افزایش بدین!
+              </p>
+              <p dir="auto">
+                اگر اولین بارتون هست که از این سایت دیدن می‌کنید، لطفا اول 
+                <a href="../Register/Register.html">ثبت‌نام</a>
+                کنید تا بیشتر با این وب‌سایت آشنا شید!
+              </p>
+            </div>
+          </div>
+          <div id="mobile" class="tabs" style="">
+            <ul>
+              <li id="blog-tab" class="tab active">
+                <a href="https://dmoj.ca/#">
+                  <i class="tab-icon fa fa-info-circle"></i> بلاگ
+                </a>
+              </li>
+              <li id="event-tab" class="tab">
+                <a href="https://dmoj.ca/#"
+                  ><i class="tab-icon fa fa-rss"></i> رویدادها </a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="blog-container" dir="ltr">
+            <div class="blog-content sidebox">
+              <h3 dir="auto">پست‌ها<i class="fa fa-terminal"></i></h3>
+              <div class="sidebox-content">
+                <section class="sticky post">
+                  <h2 class="title" dir="auto">
+                    <a href="../Blog/Post-1.html"
+                      >پست ۱</a
+                    >
+                  </h2>
+                  <div class="summary content-description">
+                    <div>
+                      <p align=center>
+                        اولین پست این وب‌سایت!
+                      </p>
+                      <div
+                        style="
+                          text-align: center;
+                          border-bottom: 1px solid rgb(204, 204, 204);
+                          padding-top: 1em;
+                          padding-bottom: 1em;
+                        "
+                      >
+                        <a href="https://dmoj.ca/contest/dmopc20c3"
+                          ><noscript
+                            >&lt;img style="text-align: center; margin: 0px
+                            auto; max-width:50%"
+                            src="//dmoj.algome.me/data/_other/dmojmopc_banner.png"
+                            alt=""&gt;</noscript
+                          ><img
+                            alt=""
+                            class="unveil"
+                            data-src="//dmoj.algome.me/data/_other/dmojmopc_banner.png"
+                            src="./Judge_files/dmojmopc_banner.png"
+                            style="
+                              text-align: center;
+                              margin: 0px auto;
+                              max-width: 50%;
+                            "
+                        /></a>
+                      </div>
+                      <p dir="auto">
+                        این یک تست بود
+                      </p>
+                      <p dir="auto">
+                        بریم 
+                        <a href="digikala.com" dir="auto">دیجی‌کالا</a>
+                      </p>
+                      <p  dir="auto">می‌بینمتون!</p>
+                    </div>
+                  </div>
+                </section>
+                
+              </div>
+              <div style="margin-bottom: 10px; margin-top: 10px" align=center>
+                <ul class="pagination">
+                  <li class="disabled-page"><span>«</span></li>
+                  <li class="active-page"><a href="../Blog/Page-1.html">۱</a></li>
+                  <li><a href="../Blog/Page-2.html">۲</a></li>
+                  <li><a href="../Blog/Page-3.html">۳</a></li>
+                  <li><a href="../Blog/Page-4.html">۴</a></li>
+                  <li><a href="../Blog/Page-5.html">۵</a></li>
+                  <li><a href="../Blog/Page-6.html">۶</a></li>
+                  <li class="disabled-page"><span>...</span></li>
+                  <li><a href="../Blog/Page-17.html">۱۷</a></li>
+                  <li><a href="../Blog/Page-18.html">۱۸</a></li>
+                  <li class="disabled-page"><span>»</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="blog-sidebar" style="display: none">
+              <div class="blog-sidebox sidebox">
+                <h3 dir="auto">مسابقات در حال انجام <i class="fa fa-trophy"></i></h3>
+                <div
+                  class="sidebox-content"
+                  style="overflow-y: auto; max-height: 23em"
+                >
+                  <div class="contest cc_cursor">
+                    <div class="contest-list-title">
+                      <a href="../Contests/Contest-1.html"
+                        >مسابقه ۱</a
+                      >
+                    </div>
+                    <div class="time cc_cursor">
+                      <span dir="auto"
+                        data-secs="864000"
+                        class="time-remaining cc_cursor"
+                        >۹ روز باقی مانده</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-sidebox sidebox">
+                <h3 dir="auto">مسابقات آینده <i class="fa fa-trophy"></i></h3>
+                <div class="sidebox-content">
+                  <div class="contest">
+                    <div class="contest-list-title">
+                      <a href="../Contests/Contest-2.html"
+                        >مسابقه ۲</a
+                      >
+                    </div>
+                    <div class="time">
+                      <span data-secs="259200" class="time-remaining" dir="auto"
+                        >۲ روز تا شروع</span
+                      >
+                    </div>
+                  </div>
+                  <div class="contest">
+                    <div class="contest-list-title">
+                      <a href="../Contests/Contest-3.html"
+                        >مسابقه ۳</a
+                      >
+                    </div>
+                    <div class="time">
+                      <span data-secs="432000" class="time-remaining" dir="auto"
+                        >۵ روز تا شروع</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-sidebox sidebox">
+                <h3 dir="auto">سوالات جدید <i class="fa fa-puzzle-piece"></i></h3>
+                <div class="sidebox-content" dir="auto">
+                  <ul class="problem-list">
+                    <li>
+                      <a href="../Problems/Problem-1.html"
+                        >سوال ۱</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
